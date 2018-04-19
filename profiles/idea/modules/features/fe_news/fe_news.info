@@ -2,19 +2,25 @@ name = fe_news
 description = Add the ideal News feature
 core = 7.x
 package = OpenideaL
-php = 5.2.4
-
+version = 7.x-2.7-dev
 project = fe_news
+dependencies[] = ctools
+dependencies[] = fe_idea
 dependencies[] = features
+dependencies[] = node
+dependencies[] = options
 dependencies[] = strongarm
 dependencies[] = taxonomy
+dependencies[] = text
 dependencies[] = views
+datestamp = 1454925739
 features[ctools][] = context:context:3
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
-features[features_api][] = api:1
-features[field][] = node-news-body
-features[field][] = node-news-field_news_tags
+features[features_api][] = api:2
+features[field_base][] = field_news_tags
+features[field_instance][] = node-news-body
+features[field_instance][] = node-news-field_news_tags
 features[node][] = news
 features[taxonomy][] = news_tags
 features[user_permission][] = create news content
@@ -49,9 +55,9 @@ features[variable][] = show_diff_inline_news
 features[variable][] = show_preview_changes_news
 features[views_view][] = news
 
-; Information added by Drupal.org packaging script on 2016-02-13
-version = "7.x-2.8"
+; Information added by Drupal.org packaging script on 2017-11-27
+version = "7.x-4.4"
 core = "7.x"
 project = "idea"
-datestamp = "1455367263"
+datestamp = "1511777364"
 

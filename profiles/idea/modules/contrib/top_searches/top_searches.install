@@ -30,19 +30,19 @@ function top_searches_schema() {
       'qid' => array(
         'type' => 'serial',
         'length' => 11,
-        'not_null' => TRUE,
+        'not null' => TRUE,
         'unsigned' => TRUE,
       ),
       'q' => array(
         'type' => 'varchar',
         'length' => 255,
-        'not_null' => TRUE,
+        'not null' => TRUE,
         'default' => ''
       ),
       'counter' => array(
         'type' => 'int',
         'length' => 11,
-        'not_null' => FALSE,
+        'not null' => FALSE,
         'default' => 0,
         'unsigned' => TRUE
       )

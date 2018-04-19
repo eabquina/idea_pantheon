@@ -118,7 +118,7 @@ function fe_idea_views_default_views() {
   $handler->display->display_options['relationships']['flag_content_rel_2']['user_scope'] = 'any';
   /* Field: Bulk operations: Content */
   $handler->display->display_options['fields']['views_bulk_operations']['id'] = 'views_bulk_operations';
-  $handler->display->display_options['fields']['views_bulk_operations']['table'] = 'node';
+  $handler->display->display_options['fields']['views_bulk_operations']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['views_bulk_operations']['field'] = 'views_bulk_operations';
   $handler->display->display_options['fields']['views_bulk_operations']['label'] = '';
   $handler->display->display_options['fields']['views_bulk_operations']['element_label_colon'] = FALSE;
@@ -135,50 +135,8 @@ function fe_idea_views_default_views() {
       'label' => '',
       'postpone_processing' => 0,
     ),
-    'action::node_assign_owner_action' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'postpone_processing' => 0,
-    ),
     'action::views_bulk_operations_delete_item' => array(
       'selected' => 1,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'postpone_processing' => 0,
-    ),
-    'action::system_message_action' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'postpone_processing' => 0,
-    ),
-    'action::views_bulk_operations_script_action' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'postpone_processing' => 0,
-    ),
-    'action::flag_node_action' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'postpone_processing' => 0,
-    ),
-    'action::node_make_sticky_action' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'postpone_processing' => 0,
-    ),
-    'action::node_make_unsticky_action' => array(
-      'selected' => 0,
       'skip_confirmation' => 0,
       'override_label' => 0,
       'label' => '',
@@ -191,77 +149,6 @@ function fe_idea_views_default_views() {
       'label' => '',
       'postpone_processing' => 0,
     ),
-    'rules_component::rules_merged_to_merged_ideas' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'postpone_processing' => 0,
-    ),
-    'rules_component::rules_merged_to_merged_to' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'postpone_processing' => 0,
-    ),
-    'action::views_bulk_operations_modify_action' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'settings' => array(
-        'show_all_tokens' => 1,
-        'display_values' => array(
-          '_all_' => '_all_',
-        ),
-      ),
-      'postpone_processing' => 0,
-    ),
-    'rules_component::rules_node_close_commenting' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'postpone_processing' => 0,
-    ),
-    'rules_component::rules_node_close_voting' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'postpone_processing' => 0,
-    ),
-    'rules_component::rules_node_hide_voting' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'postpone_processing' => 0,
-    ),
-    'action::views_bulk_operations_argument_selector_action' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'settings' => array(
-        'url' => '',
-      ),
-    ),
-    'rules_component::rules_pass_radioactivity_to_master_idea' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'postpone_processing' => 0,
-    ),
-    'action::node_promote_action' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'postpone_processing' => 0,
-    ),
     'action::node_publish_action' => array(
       'selected' => 1,
       'skip_confirmation' => 0,
@@ -269,36 +156,8 @@ function fe_idea_views_default_views() {
       'label' => '',
       'postpone_processing' => 0,
     ),
-    'action::system_goto_action' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'postpone_processing' => 0,
-    ),
-    'action::node_unpromote_action' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'postpone_processing' => 0,
-    ),
     'action::nodequeue_remove_action' => array(
       'selected' => 1,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'postpone_processing' => 0,
-    ),
-    'action::node_save_action' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'postpone_processing' => 0,
-    ),
-    'action::system_send_email_action' => array(
-      'selected' => 0,
       'skip_confirmation' => 0,
       'override_label' => 0,
       'label' => '',
@@ -313,13 +172,6 @@ function fe_idea_views_default_views() {
     ),
     'action::node_unpublish_action' => array(
       'selected' => 1,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'postpone_processing' => 0,
-    ),
-    'action::node_unpublish_by_keyword_action' => array(
-      'selected' => 0,
       'skip_confirmation' => 0,
       'override_label' => 0,
       'label' => '',
@@ -402,7 +254,7 @@ function fe_idea_views_default_views() {
   $handler->display->display_options['filters']['status']['expose']['identifier'] = 'status';
   /* Filter criterion: Flags: Flagged */
   $handler->display->display_options['filters']['flagged']['id'] = 'flagged';
-  $handler->display->display_options['filters']['flagged']['table'] = 'flag_content';
+  $handler->display->display_options['filters']['flagged']['table'] = 'flagging';
   $handler->display->display_options['filters']['flagged']['field'] = 'flagged';
   $handler->display->display_options['filters']['flagged']['relationship'] = 'flag_content_rel';
   $handler->display->display_options['filters']['flagged']['value'] = 'All';
@@ -414,7 +266,7 @@ function fe_idea_views_default_views() {
   $handler->display->display_options['filters']['flagged']['expose']['remember'] = TRUE;
   /* Filter criterion: Flags: Flagged */
   $handler->display->display_options['filters']['flagged_1']['id'] = 'flagged_1';
-  $handler->display->display_options['filters']['flagged_1']['table'] = 'flag_content';
+  $handler->display->display_options['filters']['flagged_1']['table'] = 'flagging';
   $handler->display->display_options['filters']['flagged_1']['field'] = 'flagged';
   $handler->display->display_options['filters']['flagged_1']['relationship'] = 'flag_content_rel_1';
   $handler->display->display_options['filters']['flagged_1']['value'] = 'All';
@@ -426,7 +278,7 @@ function fe_idea_views_default_views() {
   $handler->display->display_options['filters']['flagged_1']['expose']['remember'] = TRUE;
   /* Filter criterion: Flags: Flagged */
   $handler->display->display_options['filters']['flagged_2']['id'] = 'flagged_2';
-  $handler->display->display_options['filters']['flagged_2']['table'] = 'flag_content';
+  $handler->display->display_options['filters']['flagged_2']['table'] = 'flagging';
   $handler->display->display_options['filters']['flagged_2']['field'] = 'flagged';
   $handler->display->display_options['filters']['flagged_2']['relationship'] = 'flag_content_rel_2';
   $handler->display->display_options['filters']['flagged_2']['value'] = 'All';
@@ -821,10 +673,10 @@ Why not add an idea?';
   $handler->display->display_options['relationships']['flag_content_rel']['required'] = 0;
   $handler->display->display_options['relationships']['flag_content_rel']['flag'] = 'blast_idea';
   $handler->display->display_options['relationships']['flag_content_rel']['user_scope'] = 'any';
-  /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_moderator_target_id']['id'] = 'field_moderator_target_id';
-  $handler->display->display_options['relationships']['field_moderator_target_id']['table'] = 'field_data_field_moderator';
-  $handler->display->display_options['relationships']['field_moderator_target_id']['field'] = 'field_moderator_target_id';
+  /* Relationship: Content: Author */
+  $handler->display->display_options['relationships']['uid']['id'] = 'uid';
+  $handler->display->display_options['relationships']['uid']['table'] = 'node';
+  $handler->display->display_options['relationships']['uid']['field'] = 'uid';
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_challenge_ref_target_id']['id'] = 'field_challenge_ref_target_id';
   $handler->display->display_options['relationships']['field_challenge_ref_target_id']['table'] = 'field_data_field_challenge_ref';
@@ -838,8 +690,9 @@ Why not add an idea?';
   $handler->display->display_options['fields']['field_idea_image']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_idea_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_idea_image']['settings'] = array(
-    'image_style' => 'cropped_220_220',
-    'image_link' => '',
+    'image_style' => 'scale_cropped_220_220',
+    'image_link' => 'content',
+
   );
   $handler->display->display_options['fields']['field_idea_image']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_idea_image']['delta_offset'] = '0';
@@ -869,7 +722,7 @@ Why not add an idea?';
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'users';
   $handler->display->display_options['fields']['name']['field'] = 'name';
-  $handler->display->display_options['fields']['name']['relationship'] = 'field_moderator_target_id';
+  $handler->display->display_options['fields']['name']['relationship'] = 'uid';
   $handler->display->display_options['fields']['name']['label'] = '';
   $handler->display->display_options['fields']['name']['exclude'] = TRUE;
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
@@ -877,7 +730,7 @@ Why not add an idea?';
   $handler->display->display_options['fields']['picture']['id'] = 'picture';
   $handler->display->display_options['fields']['picture']['table'] = 'users';
   $handler->display->display_options['fields']['picture']['field'] = 'picture';
-  $handler->display->display_options['fields']['picture']['relationship'] = 'field_moderator_target_id';
+  $handler->display->display_options['fields']['picture']['relationship'] = 'uid';
   $handler->display->display_options['fields']['picture']['label'] = '';
   $handler->display->display_options['fields']['picture']['exclude'] = TRUE;
   $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
@@ -888,6 +741,7 @@ Why not add an idea?';
   $handler->display->display_options['fields']['field_in_action']['label'] = '';
   $handler->display->display_options['fields']['field_in_action']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_in_action']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_in_action']['empty'] = 'Brainstorming';
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
@@ -952,7 +806,7 @@ Why not add an idea?';
   $handler->display->display_options['filters']['status_extra']['expose']['operator'] = FALSE;
   /* Filter criterion: Flags: Flagged */
   $handler->display->display_options['filters']['flagged']['id'] = 'flagged';
-  $handler->display->display_options['filters']['flagged']['table'] = 'flag_content';
+  $handler->display->display_options['filters']['flagged']['table'] = 'flagging';
   $handler->display->display_options['filters']['flagged']['field'] = 'flagged';
   $handler->display->display_options['filters']['flagged']['relationship'] = 'flag_content_rel';
   $handler->display->display_options['filters']['flagged']['value'] = '0';
@@ -967,6 +821,43 @@ Why not add an idea?';
   /* Display: Popular Ideas */
   $handler = $view->new_display('block', 'Popular Ideas', 'block_1');
   $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Global: PHP */
+  $handler->display->display_options['sorts']['php']['id'] = 'php';
+  $handler->display->display_options['sorts']['php']['table'] = 'views';
+  $handler->display->display_options['sorts']['php']['field'] = 'php';
+  $handler->display->display_options['sorts']['php']['order'] = 'DESC';
+  $handler->display->display_options['sorts']['php']['expose']['label'] = 'PHP';
+  $handler->display->display_options['sorts']['php']['use_php_setup'] = 0;
+  $handler->display->display_options['sorts']['php']['php_sort'] = '/*
+Available fields:
+$row1->totalcount
+$row1->comment_count
+$row1->field_vote
+*/
+
+# @TODO: Move these values to a configuration screen:
+$factor_totalcount = 0.2;
+$factor_comment_count = 10;
+$factor_field_vote = 5;
+
+$fields = array(\'totalcount\', \'comment_count\', \'field_vote\');
+
+$score_row1 = $score_row2 = 0;
+foreach ($fields as $field) {
+  # Set the score for each row by multiplyting each field with its respecting factor and summing up all fields:
+  # Similar to:
+  /*
+  $score1 = $row1->totalcount * $factor_totalcount + 
+                 $row1->comment_count * $factor_comment_count + 
+                 $row1->vote * $factor_vote ;
+  */                 
+  $factor = \'factor_\' . $field;
+  $score_row1 += $row1->$field * $$factor;
+  $score_row2 += $row2->$field * $$factor;
+  //dsm ($row1->title .\'/\'. $field.\': \'. $row1->$field .\'*\'. $$factor);
+}
+
+return $score_row1 - $score_row2;';
 
   /* Display: Latest Ideas */
   $handler = $view->new_display('block', 'Latest Ideas', 'block_2');
@@ -981,16 +872,11 @@ Why not add an idea?';
   $handler->display->display_options['empty']['area']['content'] = 'There are no ideas in action yet.';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_moderator_target_id']['id'] = 'field_moderator_target_id';
-  $handler->display->display_options['relationships']['field_moderator_target_id']['table'] = 'field_data_field_moderator';
-  $handler->display->display_options['relationships']['field_moderator_target_id']['field'] = 'field_moderator_target_id';
-  $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: Updated date */
-  $handler->display->display_options['sorts']['changed']['id'] = 'changed';
-  $handler->display->display_options['sorts']['changed']['table'] = 'node';
-  $handler->display->display_options['sorts']['changed']['field'] = 'changed';
-  $handler->display->display_options['sorts']['changed']['order'] = 'DESC';
+  /* Relationship: Content: Author */
+  $handler->display->display_options['relationships']['uid']['id'] = 'uid';
+  $handler->display->display_options['relationships']['uid']['table'] = 'node';
+  $handler->display->display_options['relationships']['uid']['field'] = 'uid';
+  $handler->display->display_options['relationships']['uid']['required'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published or admin */
@@ -1085,7 +971,7 @@ Why not add an idea?';
   );
   /* Filter criterion: Flags: Flagged */
   $handler->display->display_options['filters']['flagged']['id'] = 'flagged';
-  $handler->display->display_options['filters']['flagged']['table'] = 'flag_content';
+  $handler->display->display_options['filters']['flagged']['table'] = 'flagging';
   $handler->display->display_options['filters']['flagged']['field'] = 'flagged';
   $handler->display->display_options['filters']['flagged']['relationship'] = 'flag_content_rel';
   $handler->display->display_options['filters']['flagged']['value'] = '0';

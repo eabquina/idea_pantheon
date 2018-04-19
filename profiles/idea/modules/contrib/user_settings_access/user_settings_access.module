@@ -1,11 +1,6 @@
 <?php
 
 /**
- * @file
- * Additional permission for more granular control of user settings and users.
- */
-
-/**
  * Implements hook_permission().
  */
 function user_settings_access_permission() {
@@ -24,10 +19,10 @@ function user_settings_access_permission() {
 }
 
 /**
- * Implements hook_help().
+ * Implements hook_help()
  */
 function user_settings_access_help($path, $arg) {
-  if ($path == 'admin/help#user_settings_access') {
+  if ($path == 'admin/help#user_settings_access') {    
     $txt = '<p>' . t('Out of the box Drupal has just one permissions, <em>adminster users</em>, which controls both user settings and editing users. The site administrator can either grant both privileges to a role or neither of them.') . '</p>';
     $txt .= '<p>' . 'This mini module provides additional permission for user settings. This allows now the site administrator to grant either user settings or administer users, or even both privileges if wanted. Often it could be clearer and helpful to allow others to manage users but restrict the general users settings only to  admin.' . '</p>';
     return $txt;
@@ -53,3 +48,4 @@ function user_settings_access_menu_alter(&$items) {
 function user_settings_access_form_user_admin_settings_alter(&$form, &$form_state, $form_id) {
   $form['admin_role']['#access'] = user_access('administer admin role');
 }
+

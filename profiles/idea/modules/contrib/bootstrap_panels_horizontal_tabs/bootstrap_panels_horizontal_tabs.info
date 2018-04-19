@@ -5,9 +5,7 @@ core = 7.x
 dependencies[] = panels
 files[] = bootstrap_panels_horizontal_tabs.module
 
-
-; Information added by drush on 2016-02-13
-version = ""
+; Information added by drush on 2013-12-05
+version = "7.x-1.x-dev"
 project = "bootstrap_panels_horizontal_tabs"
-datestamp = "1455367291"
-
+datestamp = "1386268472"

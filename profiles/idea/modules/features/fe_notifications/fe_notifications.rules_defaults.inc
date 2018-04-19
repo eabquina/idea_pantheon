@@ -104,5 +104,29 @@ function fe_notifications_default_rules_configuration() {
       ]
     }
   }');
+  $items['rules_send_mail_to_idea_author_on_comment'] = entity_import('rules_config', '{ "rules_send_mail_to_idea_author_on_comment" : {
+      "LABEL" : "send_mail_to_idea_author_on_comment",
+      "PLUGIN" : "reaction rule",
+      "OWNER" : "rules",
+      "REQUIRES" : [ "rules", "comment" ],
+      "ON" : { "comment_insert--comment_node_idea" : { "bundle" : "comment_node_idea" } },
+      "IF" : [
+        { "data_is" : {
+            "data" : [ "comment:node:author:field-comment-notficiations" ],
+            "value" : "1"
+          }
+        }
+      ],
+      "DO" : [
+        { "mail" : {
+            "to" : [ "comment:node:author:mail" ],
+            "subject" : "New comments for your idea: [comment:node:title]",
+            "message" : "Hi [comment:node:author]\\r\\n\\r\\n\\u003Cstrong\\u003E[comment:author]\\u003C\\/strong\\u003E added a new comment to your idea \\u003Cstrong\\u003E[comment:node:title]\\u003C\\/strong\\u003E:\\r\\n[comment:body]\\r\\n\\r\\n\\r\\nContinue the discussion at: [comment:url]\\r\\n\\r\\nRegards,\\r\\n[site:name]\\r\\n",
+            "language" : [ "" ]
+          }
+        }
+      ]
+    }
+  }');
   return $items;
 }

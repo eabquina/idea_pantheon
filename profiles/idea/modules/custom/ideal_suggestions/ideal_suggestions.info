@@ -9,9 +9,9 @@ files[] = ideal_suggestions.admin.inc
 files[] = ideal_suggestions.rules_defaults.inc
 files[] = ideal_suggestions.install
 
-; Information added by Drupal.org packaging script on 2016-02-13
-version = "7.x-2.8"
+; Information added by Drupal.org packaging script on 2017-11-27
+version = "7.x-4.4"
 core = "7.x"
 project = "idea"
-datestamp = "1455367263"
+datestamp = "1511777364"
 

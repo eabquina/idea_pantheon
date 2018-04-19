@@ -13,7 +13,7 @@ function idea_form_install_configure_form_alter(&$form, $form_state) {
   $form['site_information']['site_name']['#default_value'] = $_SERVER['SERVER_NAME'];
 
   // Set reasonable defaults for site configuration form
-  $form['site_information']['site_name']['#default_value'] = 'Open ideaL';
+  $form['site_information']['site_name']['#default_value'] = 'OpenideaL - Ideas and Innovation Management System';
   $form['site_information']['site_mail']['#default_value'] = 'admin@'. $_SERVER['HTTP_HOST'];
   $form['site_information']['site_frontpage']['#default_value'] = 'home';
   $form['admin_account']['account']['name']['#default_value'] = 'admin';
@@ -626,4 +626,17 @@ function idea_add_user_picture($account) {
       }
     }
   }
+}
+
+/**
+ * Hook Cron to set Indexes back to index.php
+ * This runs during install_finished()
+ */
+function idea_cron() {
+  # Allow system-side post-install procedure
+  if (variable_get('openideal_post_install', FALSE) == FALSE) {
+    system(DRUPAL_ROOT . '/profiles/idea/post-install.sh');
+    variable_set('openideal_post_install', TRUE);
+  }
+  //drupal_set_message($retval);
 }

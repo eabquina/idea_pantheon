@@ -7,24 +7,19 @@
 /**
  * Implements hook_ctools_plugin_api().
  */
-function fe_idea_ctools_plugin_api() {
-  list($module, $api) = func_get_args();
+function fe_idea_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "context" && $api == "context") {
     return array("version" => "3");
   }
-  list($module, $api) = func_get_args();
   if ($module == "page_manager" && $api == "pages_default") {
     return array("version" => "1");
   }
-  list($module, $api) = func_get_args();
   if ($module == "quicktabs" && $api == "quicktabs") {
     return array("version" => "1");
   }
-  list($module, $api) = func_get_args();
   if ($module == "radioactivity" && $api == "radioactivity_decay_profile") {
     return array("version" => "1");
   }
-  list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -33,8 +28,8 @@ function fe_idea_ctools_plugin_api() {
 /**
  * Implements hook_views_api().
  */
-function fe_idea_views_api() {
-  return array("version" => "3.0");
+function fe_idea_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
 }
 
 /**
@@ -44,9 +39,9 @@ function fe_idea_flag_default_flags() {
   $flags = array();
   // Exported flag: "Blast Idea".
   $flags['blast_idea'] = array(
-    'content_type' => 'node',
+    'entity_type' => 'node',
     'title' => 'Blast Idea',
-    'global' => '1',
+    'global' => 1,
     'types' => array(
       0 => 'idea',
     ),
@@ -58,34 +53,27 @@ function fe_idea_flag_default_flags() {
     'unflag_message' => '',
     'unflag_denied_text' => '',
     'link_type' => 'toggle',
-    'roles' => array(
-      'flag' => array(
-        0 => '3',
-        1 => '5',
-      ),
-      'unflag' => array(
-        0 => '3',
-        1 => '5',
-      ),
-    ),
     'weight' => 0,
+    'show_in_links' => array(
+      'teaser' => TRUE,
+      'full' => TRUE,
+    ),
+    'show_as_field' => FALSE,
     'show_on_form' => 0,
     'access_author' => '',
-    'show_on_page' => 1,
-    'show_on_teaser' => 1,
     'show_contextual_link' => FALSE,
     'i18n' => 0,
     'module' => 'fe_idea',
     'locked' => array(
       0 => 'name',
     ),
-    'api_version' => 2,
+    'api_version' => 3,
   );
   // Exported flag: "Buzz Idea".
   $flags['buzz_idea'] = array(
-    'content_type' => 'node',
+    'entity_type' => 'node',
     'title' => 'Buzz Idea',
-    'global' => '1',
+    'global' => 1,
     'types' => array(
       0 => 'idea',
     ),
@@ -97,34 +85,27 @@ function fe_idea_flag_default_flags() {
     'unflag_message' => '',
     'unflag_denied_text' => '',
     'link_type' => 'toggle',
-    'roles' => array(
-      'flag' => array(
-        0 => '3',
-        1 => '5',
-      ),
-      'unflag' => array(
-        0 => '3',
-        1 => '5',
-      ),
-    ),
     'weight' => 0,
+    'show_in_links' => array(
+      'teaser' => TRUE,
+      'full' => TRUE,
+    ),
+    'show_as_field' => FALSE,
     'show_on_form' => 0,
     'access_author' => '',
-    'show_on_page' => 1,
-    'show_on_teaser' => 1,
     'show_contextual_link' => FALSE,
     'i18n' => 0,
     'module' => 'fe_idea',
     'locked' => array(
       0 => 'name',
     ),
-    'api_version' => 2,
+    'api_version' => 3,
   );
   // Exported flag: "Groove Idea".
   $flags['groove_idea'] = array(
-    'content_type' => 'node',
+    'entity_type' => 'node',
     'title' => 'Groove Idea',
-    'global' => '1',
+    'global' => 1,
     'types' => array(
       0 => 'idea',
     ),
@@ -136,28 +117,21 @@ function fe_idea_flag_default_flags() {
     'unflag_message' => '',
     'unflag_denied_text' => '',
     'link_type' => 'toggle',
-    'roles' => array(
-      'flag' => array(
-        0 => '3',
-        1 => '5',
-      ),
-      'unflag' => array(
-        0 => '3',
-        1 => '5',
-      ),
-    ),
     'weight' => 0,
+    'show_in_links' => array(
+      'teaser' => TRUE,
+      'full' => TRUE,
+    ),
+    'show_as_field' => FALSE,
     'show_on_form' => 0,
     'access_author' => '',
-    'show_on_page' => 1,
-    'show_on_teaser' => 1,
     'show_contextual_link' => FALSE,
     'i18n' => 0,
     'module' => 'fe_idea',
     'locked' => array(
       0 => 'name',
     ),
-    'api_version' => 2,
+    'api_version' => 3,
   );
   return $flags;
 
@@ -177,5 +151,6 @@ function fe_idea_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }

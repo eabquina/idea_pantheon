@@ -1,6 +1,5 @@
-name = openideaL
-description = Install openideaL.
-version = VERSION
+name = OpenideaL
+description = IDEAS & INNOVATION MANAGEMENT SYSTEM
 core = 7.x
 
 ;core's
@@ -25,17 +24,14 @@ dependencies[] = file
 dependencies[] = rdf
 
 ;contribs
-dependencies[] = addressfield
-;dependencies[] = admin_menu
-;dependencies[] = admin_menu_toolbar
-dependencies[] = navbar
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
 dependencies[] = boxes
 dependencies[] = context_ui
 dependencies[] = contextphp
 dependencies[] = date_popup
 dependencies[] = date_views
 dependencies[] = defaultcontent
-dependencies[] = dragdropfile
 ;dependencies[] = email_confirm
 dependencies[] = entityreference
 dependencies[] = entityreference_prepopulate
@@ -47,7 +43,7 @@ dependencies[] = flag
 dependencies[] = flag_abuse
 dependencies[] = google_chart_tools
 dependencies[] = forward
-dependencies[] = hashtags
+;dependencies[] = hashtags
 dependencies[] = htmlmail
 dependencies[] = ideal_comments
 dependencies[] = imce_mkdir
@@ -113,12 +109,13 @@ dependencies[] = fe_pages
 dependencies[] = fe_dummy_content
 dependencies[] = fe_notifications
 dependencies[] = fe_permissions
+dependencies[] = openideal_leader_board
 
 files[] = openideal.profile
 
-; Information added by Drupal.org packaging script on 2016-02-13
-version = "7.x-2.8"
+; Information added by Drupal.org packaging script on 2017-11-27
+version = "7.x-4.4"
 core = "7.x"
 project = "idea"
-datestamp = "1455367263"
+datestamp = "1511777364"
 

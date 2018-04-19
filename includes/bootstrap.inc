@@ -8,7 +8,11 @@
 /**
  * The current system version.
  */
+<<<<<<< HEAD
 define('VERSION', '7.56');
+=======
+define('VERSION', '7.58');
+>>>>>>> upstream/master
 
 /**
  * Core API compatibility.
@@ -2657,6 +2661,13 @@ function _drupal_bootstrap_configuration() {
   timer_start('page');
   // Initialize the configuration, including variables from settings.php.
   drupal_settings_initialize();
+<<<<<<< HEAD
+=======
+
+  // Sanitize unsafe keys from the request.
+  require_once DRUPAL_ROOT . '/includes/request-sanitizer.inc';
+  DrupalRequestSanitizer::sanitize();
+>>>>>>> upstream/master
 }
 
 /**

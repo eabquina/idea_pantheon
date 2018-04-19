@@ -2,14 +2,13 @@ name = fe_user
 description = Add the ideal user's feature
 core = 7.x
 package = OpenideaL
-php = 5.2.4
-
+version = 7.x-4.0
 project = idea
-dependencies[] = addressfield
 dependencies[] = comment
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = date
+dependencies[] = entity
 dependencies[] = features
 dependencies[] = flag
 dependencies[] = ideal_main
@@ -17,6 +16,9 @@ dependencies[] = image
 dependencies[] = quicktabs
 dependencies[] = rules
 dependencies[] = strongarm
+dependencies[] = text
+dependencies[] = user
+dependencies[] = userpoints
 dependencies[] = userpoints_rules
 dependencies[] = views
 dependencies[] = voting_rules
@@ -26,10 +28,9 @@ features[ctools][] = context:context:3
 features[ctools][] = quicktabs:quicktabs:1
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
-features[features_api][] = api:1
-features[field][] = user-user-field_bio
-features[field][] = user-user-field_user_address
-features[field][] = user-user-field_user_date_birth
+features[features_api][] = api:2
+features[field_base][] = field_bio
+features[field_instance][] = user-user-field_bio
 features[flag][] = bronze_user
 features[flag][] = gold_user
 features[flag][] = has_launched_idea
@@ -50,9 +51,9 @@ features[views_view][] = my_commented_ideas
 features[views_view][] = my_voted_ideas
 features[views_view][] = user_ideas
 
-; Information added by Drupal.org packaging script on 2016-02-13
-version = "7.x-2.8"
+; Information added by Drupal.org packaging script on 2017-11-27
+version = "7.x-4.4"
 core = "7.x"
 project = "idea"
-datestamp = "1455367263"
+datestamp = "1511777364"
 

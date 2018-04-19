@@ -4,9 +4,9 @@ description = Additional permission for more granular control of user settings a
 core = 7.x
 package = "Administration"
 
-; Information added by drupal.org packaging script on 2013-10-19
-version = "7.x-1.0+1-dev"
+; Information added by drupal.org packaging script on 2013-04-28
+version = "7.x-1.0"
 core = "7.x"
 project = "user_settings_access"
-datestamp = "1382151004"
+datestamp = "1367172916"
 

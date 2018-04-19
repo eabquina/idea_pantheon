@@ -36,7 +36,8 @@ settings[bootstrap_navbar_position] = 'fixed-top'
 
 ; Advanced
 ; --------------
-settings[bootstrap_cdn] = 3.0.2
+
+settings[bootstrap_cdn] = 3.3.7
 settings[bootstrap_bootswatch] = 'yeti'
 
 ; For information on choosing the desired method, please read the Drupal
@@ -79,9 +80,9 @@ settings[bootstrap_bootswatch] = 'yeti'
 ; is overrides to Bootstrap theme settings. Copy them here from the base theme
 ; to override.
 
-; Information added by Drupal.org packaging script on 2016-02-13
-version = "7.x-1.2"
+; Information added by Drupal.org packaging script on 2017-10-18
+version = "7.x-1.5"
 core = "7.x"
 project = "socrates"
-datestamp = "1455365649"
+datestamp = "1508319557"
 

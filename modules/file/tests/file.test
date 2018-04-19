@@ -1626,8 +1626,6 @@ class FilePrivateTestCase extends FileFieldTestCase {
     $this->drupalGet($file_url);
     $this->assertResponse(403, 'Confirmed that another anonymous user cannot access the permanent file when it is referenced by an unpublished node.');
   }
-<<<<<<< HEAD
-=======
 
   /**
    * Tests file access for private nodes when file download access is granted.
@@ -1701,7 +1699,6 @@ class FilePrivateTestCase extends FileFieldTestCase {
     $this->drupalGet($file_url);
     $this->assertResponse(403, 'Anonymous user cannot download the file attached to the private node.');
   }
->>>>>>> upstream/master
 }
 
 /**

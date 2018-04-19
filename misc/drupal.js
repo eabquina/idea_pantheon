@@ -28,8 +28,6 @@ $.fn.init = function (selector, context, rootjQuery) {
 $.fn.init.prototype = jquery_init.prototype;
 
 /**
-<<<<<<< HEAD
-=======
  * Pre-filter Ajax requests to guard against XSS attacks.
  *
  * See https://github.com/jquery/jquery/issues/2432
@@ -66,7 +64,6 @@ else if ($.httpData) {
 }
 
 /**
->>>>>>> upstream/master
  * Attach all registered behaviors to a page element.
  *
  * Behaviors are event-triggered actions that attach to page elements, enhancing
@@ -176,11 +173,7 @@ Drupal.detachBehaviors = function (context, settings, trigger) {
  */
 Drupal.checkPlain = function (str) {
   var character, regex,
-<<<<<<< HEAD
-      replace = { '&': '&amp;', '"': '&quot;', '<': '&lt;', '>': '&gt;' };
-=======
       replace = { '&': '&amp;', "'": '&#39;', '"': '&quot;', '<': '&lt;', '>': '&gt;' };
->>>>>>> upstream/master
   str = String(str);
   for (character in replace) {
     if (replace.hasOwnProperty(character)) {

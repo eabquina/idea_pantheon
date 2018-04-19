@@ -76,11 +76,7 @@ class DrupalAlterTestCase extends DrupalWebTestCase {
 class CommonURLUnitTest extends DrupalWebTestCase {
   public static function getInfo() {
     return array(
-<<<<<<< HEAD
-      'name' => 'URL generation tests',
-=======
       'name' => 'URL generation unit tests',
->>>>>>> upstream/master
       'description' => 'Confirm that url(), drupal_get_query_parameters(), drupal_http_build_query(), and l() work correctly with various input.',
       'group' => 'System',
     );
@@ -377,8 +373,6 @@ class CommonURLUnitTest extends DrupalWebTestCase {
 }
 
 /**
-<<<<<<< HEAD
-=======
  * Web tests for URL generation functions.
  */
 class CommonURLWebTest extends DrupalWebTestCase {
@@ -411,7 +405,6 @@ class CommonURLWebTest extends DrupalWebTestCase {
 }
 
 /**
->>>>>>> upstream/master
  * Tests url_is_external().
  */
 class UrlIsExternalUnitTest extends DrupalUnitTestCase {
